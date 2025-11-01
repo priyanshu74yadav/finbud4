@@ -1,0 +1,13 @@
+// {
+//   "mcpServers": {
+//     "magic-mcp": {
+//       "command": "uvx",
+//       "args": ["21st-dev-magic-mcp"],
+//       "env": {
+//         "FASTMCP_LOG_LEVEL": "ERROR"
+//       },
+//       "disabled": false,
+//       "autoApprove": []
+//     }
+//   }
+// }
