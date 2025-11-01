@@ -1,6 +1,7 @@
 # FinBud: Complete Execution Plan & Setup Guide
 
 ## 📋 Overview
+
 This guide will take you from zero to a working FinBud prototype in 48 hours. No prior knowledge of Pathway, MCP, or advanced Python required.
 
 ---
@@ -101,13 +102,16 @@ pip install python-dotenv pydantic requests
 **What is Magic MCP?** AI tool that generates React UI components from prompts.
 
 1. Install uv (Python package manager):
+
    ```bash
    # Windows (PowerShell as Administrator)
    powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
    ```
 
 2. Configure MCP in Kiro:
+
    - Your `.kiro/settings/mcp.json` should have:
+
    ```json
    {
      "mcpServers": {
@@ -183,12 +187,14 @@ git commit -m "Initial project structure"
 **Goal:** Parse PDF, Word, Excel files into text.
 
 **Files to create:**
+
 - `backend/ingestion/pdf_parser.py`
 - `backend/ingestion/word_parser.py`
 - `backend/ingestion/excel_parser.py`
 - `backend/ingestion/ocr_handler.py`
 
 **Key concepts:**
+
 - PyMuPDF extracts text from PDFs
 - python-docx reads Word documents
 - openpyxl handles Excel files
@@ -201,10 +207,12 @@ git commit -m "Initial project structure"
 **Goal:** Store and manage financial term mappings.
 
 **Files to create:**
+
 - `backend/data/synonyms/financial_terms.json`
 - `backend/synonyms/manager.py`
 
 **Structure:**
+
 ```json
 {
   "sales_tax": ["VAT", "GST", "Sales Tax", "Consumption Tax"],
@@ -220,6 +228,7 @@ git commit -m "Initial project structure"
 **Goal:** Build real-time index that updates when documents change.
 
 **What is Pathway doing?**
+
 - Watches for new documents
 - Splits text into chunks
 - Creates vector embeddings (numerical representations)
@@ -227,11 +236,13 @@ git commit -m "Initial project structure"
 - Updates automatically when data changes
 
 **Files to create:**
+
 - `backend/indexing/pathway_pipeline.py`
 - `backend/indexing/embeddings.py`
 - `backend/indexing/hybrid_search.py`
 
 **Key Pathway concepts:**
+
 ```python
 import pathway as pw
 
@@ -263,6 +274,7 @@ index = embedded.build_index()
 **Goal:** Use GPT-4 to answer queries with retrieved context.
 
 **What happens in a query?**
+
 1. User asks: "What is our Q3 revenue?"
 2. Expand with synonyms: ["revenue", "sales", "turnover"]
 3. Search index for relevant chunks
@@ -270,11 +282,13 @@ index = embedded.build_index()
 5. GPT-4 returns structured answer with sources
 
 **Files to create:**
+
 - `backend/llm/query_engine.py`
 - `backend/llm/prompt_templates.py`
 - `backend/llm/response_parser.py`
 
 **Prompt template example:**
+
 ```
 You are a financial analyst assistant. Based on the following documents:
 
@@ -297,6 +311,7 @@ Provide:
 **Goal:** Create REST API for frontend to call.
 
 **Endpoints needed:**
+
 - POST `/query` - Submit question, get answer
 - GET `/synonyms` - List all term mappings
 - POST `/synonyms` - Add/update mapping
@@ -304,6 +319,7 @@ Provide:
 - GET `/documents` - List uploaded docs
 
 **Files to create:**
+
 - `backend/api/main.py`
 - `backend/api/routes.py`
 - `backend/api/models.py`
@@ -340,6 +356,7 @@ Configure `tailwind.config.js` for 21st.dev components.
 
 1. Open Kiro chat
 2. Type prompts like:
+
    - "Create a query input component with submit button"
    - "Generate a data table for displaying financial results"
    - "Build a synonym editor form with add/delete"
@@ -348,6 +365,7 @@ Configure `tailwind.config.js` for 21st.dev components.
 4. Copy into your `frontend/src/components/` folder
 
 **Components needed:**
+
 - `QueryPanel.tsx` - Input box for questions
 - `ResultsTable.tsx` - Display answers with sources
 - `SynonymManager.tsx` - Edit term mappings
@@ -359,16 +377,17 @@ Configure `tailwind.config.js` for 21st.dev components.
 ### Step 3.4: Connect Frontend to Backend (Hours 26-28)
 
 **Files to create:**
+
 - `frontend/src/api/client.ts` - API calls
 - `frontend/src/hooks/useQuery.ts` - React hooks
 
 ```typescript
 // Example API call
 export async function submitQuery(question: string) {
-  const response = await fetch('http://localhost:8000/query', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ question })
+  const response = await fetch("http://localhost:8000/query", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ question }),
   });
   return response.json();
 }
@@ -395,6 +414,7 @@ yo office
 ```
 
 Choose:
+
 - Project type: Excel Add-in
 - Script type: JavaScript
 - Name: FinBud
@@ -404,11 +424,13 @@ Choose:
 **What is a taskpane?** Side panel in Excel/Word where your UI appears.
 
 Copy your web UI components into the add-in:
+
 - Query input
 - Results display
 - Insert into spreadsheet button
 
 **Files to modify:**
+
 - `office-addin/src/taskpane/taskpane.html`
 - `office-addin/src/taskpane/taskpane.js`
 
@@ -435,6 +457,7 @@ Excel.run(async (context) => {
 ### Step 5.1: End-to-End Testing (Hours 38-42)
 
 **Test scenarios:**
+
 1. Upload financial PDF → Verify indexed
 2. Query "revenue" → Get results with sources
 3. Add synonym "Turnover" = "Revenue" → Query again, verify change
@@ -461,6 +484,7 @@ Excel.run(async (context) => {
 ### Step 6.1: Containerize Backend (Hours 46-47)
 
 Create `Dockerfile`:
+
 ```dockerfile
 FROM python:3.11
 WORKDIR /app
@@ -473,6 +497,7 @@ CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0"]
 ### Step 6.2: Documentation (Hours 47-48)
 
 Create:
+
 - `README.md` - Setup instructions
 - `API_DOCS.md` - Endpoint documentation
 - `USER_GUIDE.md` - How to use FinBud
@@ -480,6 +505,7 @@ Create:
 ### Step 6.3: Demo Preparation
 
 Prepare demo showing:
+
 1. Live query with real-time results
 2. Synonym editing with immediate effect
 3. Excel add-in usage
@@ -490,22 +516,28 @@ Prepare demo showing:
 ## 📚 Key Concepts Explained
 
 ### What is RAG (Retrieval-Augmented Generation)?
+
 Instead of relying only on LLM's training data, we:
+
 1. Retrieve relevant documents from our index
 2. Feed them to the LLM as context
 3. LLM generates answer based on actual data
 
 ### What is Hybrid Search?
+
 Combines two search methods:
+
 - **Vector search:** Finds semantically similar text (understands meaning)
 - **BM25 (keyword search):** Finds exact term matches
 - Together: More accurate results
 
 ### What is Streaming/Live Updates?
+
 Traditional systems: Rebuild entire index when data changes
 Pathway: Updates only changed parts in real-time (<200ms)
 
 ### What is MCP (Model Context Protocol)?
+
 Standard way for AI tools to communicate. Magic MCP lets Kiro generate UI code.
 
 ---
@@ -513,21 +545,25 @@ Standard way for AI tools to communicate. Magic MCP lets Kiro generate UI code.
 ## 🆘 Troubleshooting
 
 ### Python Issues
+
 - "python not found" → Reinstall, check PATH
 - "pip not found" → Use `python -m pip` instead
 - Import errors → Activate venv first
 
 ### Pathway Issues
+
 - Slow indexing → Reduce chunk size
 - Memory errors → Process fewer documents at once
 - Connection errors → Check Pathway version compatibility
 
 ### Frontend Issues
+
 - "npm not found" → Reinstall Node.js
 - Build errors → Delete node_modules, run `npm install` again
 - CORS errors → Configure FastAPI CORS middleware
 
 ### MCP Issues
+
 - Magic not responding → Restart Kiro, reconnect MCP
 - uvx not found → Reinstall uv
 - Generation errors → Simplify prompt, be more specific
@@ -539,6 +575,7 @@ Standard way for AI tools to communicate. Magic MCP lets Kiro generate UI code.
 Use this checklist:
 
 **Setup (Hours 0-2)**
+
 - [ ] Python installed
 - [ ] Node.js installed
 - [ ] Virtual environment created
@@ -547,6 +584,7 @@ Use this checklist:
 - [ ] Magic MCP configured
 
 **Backend (Hours 2-18)**
+
 - [ ] Document parsers working
 - [ ] Synonym database created
 - [ ] Pathway pipeline running
@@ -554,22 +592,26 @@ Use this checklist:
 - [ ] FastAPI endpoints tested
 
 **Frontend (Hours 18-32)**
+
 - [ ] React app created
 - [ ] UI components generated
 - [ ] Connected to backend
 - [ ] Export functionality working
 
 **Office Add-in (Hours 32-38)**
+
 - [ ] Add-in project created
 - [ ] Taskpane UI built
 - [ ] Excel integration working
 
 **Testing (Hours 38-46)**
+
 - [ ] End-to-end tests passing
 - [ ] Performance optimized
 - [ ] Bugs fixed
 
 **Deployment (Hours 46-48)**
+
 - [ ] Backend containerized
 - [ ] Documentation complete
 - [ ] Demo ready
@@ -579,6 +621,7 @@ Use this checklist:
 ## 🎯 Success Criteria
 
 By hour 48, you should have:
+
 1. ✅ Working web app where users can query financial terms
 2. ✅ Real-time synonym updates reflected in queries
 3. ✅ Excel add-in that inserts results into spreadsheets

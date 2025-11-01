@@ -1,0 +1,37 @@
+QUARTERLY FINANCIAL REPORT - Q3 2024
+
+Company: FinBud Technologies Inc.
+Period: July 1 - September 30, 2024
+
+REVENUE SUMMARY
+---------------
+Total Revenue: $2,450,000
+- Product Sales: $1,800,000
+- Service Revenue: $650,000
+
+EXPENSES
+--------
+Operating Expenses: $1,200,000
+- Salaries: $800,000
+- Marketing: $250,000
+- R&D: $150,000
+
+Sales Tax (VAT): $245,000
+GST Collected: $122,500
+
+NET INCOME
+----------
+Gross Profit: $1,250,000
+Net Profit: $882,500
+
+YEAR-OVER-YEAR COMPARISON
+--------------------------
+Revenue Growth: +15%
+Profit Margin: 36%
+Customer Acquisition Cost: $450
+
+KEY METRICS
+-----------
+- Monthly Recurring Revenue (MRR): $816,667
+- Customer Lifetime Value: $12,500
+- Churn Rate: 2.3%
