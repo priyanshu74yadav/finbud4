@@ -1,20 +1,42 @@
 from pathlib import Path
 from typing import Dict
 import fitz
+import os
 
 
 class OCRHandler:
     
     def __init__(self):
-        self.tesseract_available = self._check_tesseract()
         self.supported_image_formats = {'.jpg', '.jpeg', '.png', '.bmp', '.tiff', '.tif', '.gif'}
+        self.tesseract_available = self._check_and_configure_tesseract()
     
-    def _check_tesseract(self) -> bool:
+    def _check_and_configure_tesseract(self) -> bool:
         try:
             import pytesseract
-            pytesseract.get_tesseract_version()
-            return True
-        except Exception:
+            
+            common_paths = [
+                r"C:\Program Files\Tesseract-OCR\tesseract.exe",
+                r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe",
+                r"C:\Tesseract-OCR\tesseract.exe",
+                "/usr/bin/tesseract",
+                "/usr/local/bin/tesseract"
+            ]
+            
+            try:
+                pytesseract.get_tesseract_version()
+                return True
+            except:
+                for path in common_paths:
+                    if os.path.exists(path):
+                        pytesseract.pytesseract.tesseract_cmd = path
+                        try:
+                            pytesseract.get_tesseract_version()
+                            return True
+                        except:
+                            continue
+                
+                return False
+        except ImportError:
             return False
     
     def is_image_supported(self, file_path: str) -> bool:

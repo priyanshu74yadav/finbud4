@@ -1,0 +1,695 @@
+{
+  "revenue": [
+    "Sales",
+    "Gross Sales",
+    "Total Revenue",
+    "Turnover",
+    "Income",
+    "Top Line"
+  ],
+  "profit": [
+    "Net Income",
+    "Earnings",
+    "Bottom Line",
+    "Net Profit",
+    "Profit After Tax"
+  ],
+  "sales_tax": [
+    "VAT",
+    "GST",
+    "Sales Tax",
+    "Consumption Tax",
+    "Value Added Tax",
+    "Goods and Services Tax"
+  ],
+  "expenses": [
+    "Costs",
+    "Expenditure",
+    "Operating Expenses",
+    "Outgoings",
+    "Spending"
+  ],
+  "assets": [
+    "Resources",
+    "Holdings",
+    "Property",
+    "Capital Assets",
+    "Fixed Assets"
+  ],
+  "liabilities": [
+    "Debts",
+    "Obligations",
+    "Payables",
+    "Accounts Payable",
+    "Outstanding Debts"
+  ],
+  "equity": [
+    "Shareholders Equity",
+    "Net Worth",
+    "Owners Equity",
+    "Capital",
+    "Stockholders Equity"
+  ],
+  "cash_flow": [
+    "Cash Movement",
+    "Liquidity",
+    "Cash Position",
+    "Working Capital"
+  ],
+  "depreciation": [
+    "Amortization",
+    "Asset Depreciation",
+    "Write-down",
+    "Value Reduction"
+  ],
+  "interest": [
+    "Finance Charges",
+    "Interest Expense",
+    "Debt Service",
+    "Borrowing Costs"
+  ],
+  "dividend": [
+    "Distribution",
+    "Shareholder Distribution",
+    "Payout",
+    "Dividend Payment"
+  ],
+  "inventory": [
+    "Stock",
+    "Goods",
+    "Merchandise",
+    "Stock on Hand",
+    "Inventory Assets"
+  ],
+  "accounts_receivable": [
+    "Receivables",
+    "Debtors",
+    "Trade Receivables",
+    "AR",
+    "Outstanding Invoices"
+  ],
+  "accounts_payable": [
+    "Payables",
+    "Creditors",
+    "Trade Payables",
+    "AP",
+    "Outstanding Bills"
+  ],
+  "gross_margin": [
+    "Gross Profit Margin",
+    "Gross Profit Percentage",
+    "GP Margin"
+  ],
+  "operating_income": [
+    "EBIT",
+    "Operating Profit",
+    "Earnings Before Interest and Tax"
+  ],
+  "ebitda": [
+    "Earnings Before Interest Tax Depreciation Amortization",
+    "Operating Cash Flow"
+  ],
+  "roi": [
+    "Return on Investment",
+    "Investment Return",
+    "ROI Percentage"
+  ],
+  "roa": [
+    "Return on Assets",
+    "Asset Return",
+    "ROA Percentage"
+  ],
+  "roe": [
+    "Return on Equity",
+    "Equity Return",
+    "ROE Percentage"
+  ],
+  "current_ratio": [
+    "Liquidity Ratio",
+    "Working Capital Ratio"
+  ],
+  "debt_ratio": [
+    "Leverage Ratio",
+    "Debt to Assets",
+    "Gearing Ratio"
+  ],
+  "quick_ratio": [
+    "Acid Test Ratio",
+    "Liquid Ratio"
+  ],
+  "budget": [
+    "Financial Plan",
+    "Spending Plan",
+    "Allocation",
+    "Budget Forecast"
+  ],
+  "forecast": [
+    "Projection",
+    "Estimate",
+    "Prediction",
+    "Financial Forecast"
+  ],
+  "variance": [
+    "Difference",
+    "Deviation",
+    "Budget Variance",
+    "Actual vs Budget"
+  ],
+  "accrual": [
+    "Accrued Expense",
+    "Accrued Revenue",
+    "Accrual Accounting"
+  ],
+  "prepaid": [
+    "Prepayment",
+    "Advance Payment",
+    "Prepaid Expense"
+  ],
+  "deferred": [
+    "Deferred Revenue",
+    "Unearned Revenue",
+    "Advance Receipt"
+  ],
+  "write_off": [
+    "Bad Debt",
+    "Uncollectible",
+    "Loss",
+    "Write-down"
+  ],
+  "provision": [
+    "Reserve",
+    "Allowance",
+    "Contingency",
+    "Provision for Losses"
+  ],
+  "goodwill": [
+    "Intangible Asset",
+    "Brand Value",
+    "Acquisition Premium"
+  ],
+  "capital_expenditure": [
+    "CapEx",
+    "Capital Spending",
+    "Fixed Asset Investment",
+    "Capital Investment"
+  ],
+  "operating_expenditure": [
+    "OpEx",
+    "Operating Costs",
+    "Running Costs",
+    "Operational Expenses"
+  ],
+  "break_even": [
+    "Break Even Point",
+    "BEP",
+    "Zero Profit Point"
+  ],
+  "margin": [
+    "Profit Margin",
+    "Markup",
+    "Spread",
+    "Margin Percentage"
+  ],
+  "overhead": [
+    "Indirect Costs",
+    "Fixed Costs",
+    "Administrative Expenses",
+    "Overhead Costs"
+  ],
+  "cost_of_goods_sold": [
+    "COGS",
+    "Cost of Sales",
+    "Direct Costs",
+    "Product Costs"
+  ],
+  "gross_profit": [
+    "Gross Margin",
+    "Gross Income",
+    "Sales Profit"
+  ],
+  "net_sales": [
+    "Net Revenue",
+    "Sales After Returns",
+    "Net Turnover"
+  ],
+  "working_capital": [
+    "Current Assets minus Current Liabilities",
+    "Operating Liquidity",
+    "Net Working Capital"
+  ],
+  "retained_earnings": [
+    "Accumulated Profits",
+    "Reserves",
+    "Undistributed Profits"
+  ],
+  "shareholder": [
+    "Stockholder",
+    "Equity Holder",
+    "Investor",
+    "Share Owner"
+  ],
+  "fiscal_year": [
+    "Financial Year",
+    "Accounting Year",
+    "FY",
+    "Tax Year"
+  ],
+  "quarter": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Quarterly Period",
+    "Three Month Period"
+  ],
+  "annual": [
+    "Yearly",
+    "Per Annum",
+    "12 Month Period",
+    "Year End"
+  ],
+  "ytd": [
+    "Year to Date",
+    "YTD Performance",
+    "Cumulative Year"
+  ],
+  "mtd": [
+    "Month to Date",
+    "MTD Performance",
+    "Cumulative Month"
+  ],
+  "balance_sheet": [
+    "Statement of Financial Position",
+    "Financial Statement",
+    "Balance Report"
+  ],
+  "income_statement": [
+    "Profit and Loss",
+    "P&L",
+    "Statement of Operations",
+    "Earnings Statement"
+  ],
+  "cash_flow_statement": [
+    "Statement of Cash Flows",
+    "Cash Flow Report",
+    "Liquidity Statement"
+  ],
+  "audit": [
+    "Financial Audit",
+    "External Review",
+    "Audit Report",
+    "Financial Examination"
+  ],
+  "compliance": [
+    "Regulatory Compliance",
+    "Adherence",
+    "Conformity",
+    "Legal Compliance"
+  ],
+  "tax": [
+    "Taxation",
+    "Tax Liability",
+    "Tax Expense",
+    "Income Tax"
+  ],
+  "payroll": [
+    "Salary Expenses",
+    "Wage Costs",
+    "Employee Compensation",
+    "Staff Costs"
+  ],
+  "commission": [
+    "Sales Commission",
+    "Incentive",
+    "Performance Bonus",
+    "Commission Payment"
+  ],
+  "discount": [
+    "Price Reduction",
+    "Rebate",
+    "Markdown",
+    "Sales Discount"
+  ],
+  "refund": [
+    "Reimbursement",
+    "Repayment",
+    "Return",
+    "Money Back"
+  ],
+  "invoice": [
+    "Bill",
+    "Sales Invoice",
+    "Statement",
+    "Payment Request"
+  ],
+  "receipt": [
+    "Payment Receipt",
+    "Proof of Payment",
+    "Transaction Record"
+  ],
+  "credit_note": [
+    "Credit Memo",
+    "Sales Return",
+    "Refund Note"
+  ],
+  "debit_note": [
+    "Debit Memo",
+    "Additional Charge",
+    "Adjustment Note"
+  ],
+  "purchase_order": [
+    "PO",
+    "Order Form",
+    "Procurement Order"
+  ],
+  "quotation": [
+    "Quote",
+    "Estimate",
+    "Price Proposal",
+    "Bid"
+  ],
+  "contract": [
+    "Agreement",
+    "Service Agreement",
+    "Business Contract"
+  ],
+  "lease": [
+    "Rental Agreement",
+    "Lease Contract",
+    "Tenancy Agreement"
+  ],
+  "loan": [
+    "Borrowing",
+    "Credit",
+    "Debt",
+    "Financing"
+  ],
+  "mortgage": [
+    "Home Loan",
+    "Property Loan",
+    "Real Estate Financing"
+  ],
+  "interest_rate": [
+    "Rate of Interest",
+    "APR",
+    "Interest Percentage",
+    "Borrowing Rate"
+  ],
+  "principal": [
+    "Loan Amount",
+    "Original Amount",
+    "Principal Balance"
+  ],
+  "collateral": [
+    "Security",
+    "Pledge",
+    "Guarantee",
+    "Asset Backing"
+  ],
+  "default": [
+    "Non-payment",
+    "Breach",
+    "Failure to Pay",
+    "Loan Default"
+  ],
+  "bankruptcy": [
+    "Insolvency",
+    "Financial Failure",
+    "Liquidation"
+  ],
+  "merger": [
+    "Acquisition",
+    "Consolidation",
+    "Business Combination",
+    "M&A"
+  ],
+  "ipo": [
+    "Initial Public Offering",
+    "Stock Market Launch",
+    "Going Public"
+  ],
+  "stock": [
+    "Shares",
+    "Equity",
+    "Securities",
+    "Stock Holdings"
+  ],
+  "bond": [
+    "Debt Security",
+    "Fixed Income",
+    "Corporate Bond",
+    "Debenture"
+  ],
+  "dividend_yield": [
+    "Dividend Return",
+    "Yield Percentage",
+    "Distribution Yield"
+  ],
+  "earnings_per_share": [
+    "EPS",
+    "Per Share Earnings",
+    "Share Profit"
+  ],
+  "price_earnings_ratio": [
+    "P/E Ratio",
+    "PE Multiple",
+    "Earnings Multiple"
+  ],
+  "market_cap": [
+    "Market Capitalization",
+    "Company Value",
+    "Market Value"
+  ],
+  "book_value": [
+    "Net Asset Value",
+    "Equity Value",
+    "Carrying Value"
+  ],
+  "fair_value": [
+    "Market Value",
+    "True Value",
+    "Fair Market Price"
+  ],
+  "impairment": [
+    "Asset Impairment",
+    "Value Loss",
+    "Write-down"
+  ],
+  "revaluation": [
+    "Asset Revaluation",
+    "Fair Value Adjustment",
+    "Revaluation Surplus"
+  ],
+  "consolidation": [
+    "Group Accounts",
+    "Consolidated Financials",
+    "Combined Statements"
+  ],
+  "subsidiary": [
+    "Controlled Entity",
+    "Affiliate",
+    "Subsidiary Company"
+  ],
+  "parent_company": [
+    "Holding Company",
+    "Parent Entity",
+    "Controlling Company"
+  ],
+  "joint_venture": [
+    "JV",
+    "Partnership",
+    "Collaborative Business",
+    "Joint Enterprise"
+  ],
+  "franchise": [
+    "Licensed Business",
+    "Franchise Agreement",
+    "Brand License"
+  ],
+  "royalty": [
+    "License Fee",
+    "Usage Fee",
+    "Royalty Payment"
+  ],
+  "grant": [
+    "Government Grant",
+    "Subsidy",
+    "Financial Aid",
+    "Funding"
+  ],
+  "subsidy": [
+    "Government Support",
+    "Financial Assistance",
+    "Aid"
+  ],
+  "tariff": [
+    "Import Duty",
+    "Customs Duty",
+    "Trade Tariff"
+  ],
+  "exchange_rate": [
+    "FX Rate",
+    "Currency Rate",
+    "Conversion Rate",
+    "Foreign Exchange Rate"
+  ],
+  "hedging": [
+    "Risk Management",
+    "Protection",
+    "Financial Hedge"
+  ],
+  "derivative": [
+    "Financial Derivative",
+    "Options",
+    "Futures",
+    "Swap"
+  ],
+  "commodity": [
+    "Raw Material",
+    "Goods",
+    "Trading Commodity"
+  ],
+  "inflation": [
+    "Price Increase",
+    "Cost Inflation",
+    "Inflation Rate"
+  ],
+  "deflation": [
+    "Price Decrease",
+    "Negative Inflation"
+  ],
+  "recession": [
+    "Economic Downturn",
+    "Economic Decline",
+    "Contraction"
+  ],
+  "gdp": [
+    "Gross Domestic Product",
+    "Economic Output",
+    "National Income"
+  ],
+  "benchmark": [
+    "Standard",
+    "Reference Point",
+    "Performance Benchmark",
+    "KPI"
+  ],
+  "kpi": [
+    "Key Performance Indicator",
+    "Performance Metric",
+    "Success Measure"
+  ],
+  "milestone": [
+    "Target",
+    "Goal",
+    "Achievement Point",
+    "Deliverable"
+  ],
+  "allocation": [
+    "Distribution",
+    "Assignment",
+    "Resource Allocation",
+    "Budget Allocation"
+  ],
+  "appropriation": [
+    "Fund Allocation",
+    "Budget Appropriation",
+    "Designated Funds"
+  ],
+  "contingency": [
+    "Reserve Fund",
+    "Emergency Fund",
+    "Contingency Budget"
+  ],
+  "solvency": [
+    "Financial Stability",
+    "Ability to Pay",
+    "Creditworthiness"
+  ],
+  "liquidity": [
+    "Cash Availability",
+    "Liquid Assets",
+    "Cash Position"
+  ],
+  "profitability": [
+    "Profit Performance",
+    "Earning Capacity",
+    "Financial Success"
+  ],
+  "efficiency": [
+    "Operational Efficiency",
+    "Productivity",
+    "Cost Effectiveness"
+  ],
+  "turnover_ratio": [
+    "Asset Turnover",
+    "Inventory Turnover",
+    "Efficiency Ratio"
+  ],
+  "burn_rate": [
+    "Cash Burn",
+    "Spending Rate",
+    "Monthly Burn"
+  ],
+  "runway": [
+    "Cash Runway",
+    "Survival Period",
+    "Months of Operation"
+  ],
+  "valuation": [
+    "Company Valuation",
+    "Business Worth",
+    "Enterprise Value"
+  ],
+  "due_diligence": [
+    "Financial Review",
+    "Investigation",
+    "Audit Review"
+  ],
+  "materiality": [
+    "Significance",
+    "Material Amount",
+    "Threshold"
+  ],
+  "disclosure": [
+    "Financial Disclosure",
+    "Reporting",
+    "Transparency"
+  ],
+  "reconciliation": [
+    "Account Reconciliation",
+    "Matching",
+    "Balance Verification"
+  ],
+  "adjustment": [
+    "Accounting Adjustment",
+    "Correction",
+    "Entry Modification"
+  ],
+  "journal_entry": [
+    "Accounting Entry",
+    "Ledger Entry",
+    "Transaction Record"
+  ],
+  "trial_balance": [
+    "Account Balance",
+    "Balance Summary",
+    "Pre-closing Balance"
+  ],
+  "closing": [
+    "Period Close",
+    "Month End",
+    "Year End Close",
+    "Financial Close"
+  ],
+  "opening_balance": [
+    "Beginning Balance",
+    "Starting Balance",
+    "Brought Forward"
+  ],
+  "closing_balance": [
+    "Ending Balance",
+    "Final Balance",
+    "Carried Forward"
+  ]
+}
